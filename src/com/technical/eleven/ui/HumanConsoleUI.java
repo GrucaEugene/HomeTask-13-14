@@ -1,6 +1,8 @@
 package com.technical.eleven.ui;
 
 import com.technical.eleven.main.items.Human;
+
+import java.util.List;
 import java.util.Scanner;
 
 public class HumanConsoleUI implements HumanUI {
@@ -44,9 +46,11 @@ public class HumanConsoleUI implements HumanUI {
 
     }
 
-    public void showHumans(Human[] humans){
-        for (int i = 0; i < humans.length; i++) {
-            System.out.println(i + 1 + ". " + humans[i]);
+    @Override
+    public void showHumans(List<Human> humans){
+        for (int i = 0; i < humans.size(); i++) {
+            System.out.println(i+1+". "+humans.get(i));
         }
     }
+
 }

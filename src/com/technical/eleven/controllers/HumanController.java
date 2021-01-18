@@ -4,7 +4,6 @@ import com.technical.eleven.main.items.Human;
 import com.technical.eleven.services.HumanService;
 import com.technical.eleven.ui.HumanConsoleUI;
 import com.technical.eleven.ui.HumanUI;
-
 import java.util.Scanner;
 
 public class HumanController {

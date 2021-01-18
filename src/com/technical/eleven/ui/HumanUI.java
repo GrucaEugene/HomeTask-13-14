@@ -2,6 +2,8 @@ package com.technical.eleven.ui;
 
 import com.technical.eleven.main.items.Human;
 
+import java.util.List;
+
 public interface HumanUI {
 
 
@@ -9,7 +11,7 @@ public interface HumanUI {
     String readName();
     Human readHuman();
     int getIndexOfHuman();
-    void showHumans(Human[] humans);
+    void showHumans(List<Human> humans);
 
 }
 

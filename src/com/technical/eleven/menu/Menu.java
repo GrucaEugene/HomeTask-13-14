@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Menu {
     HumanController humanController = new HumanController();
-    private MenuItem[] items = new MenuItem[]{
+    private final MenuItem[] items = new MenuItem[]{
             new AddHumanMenuItem(humanController),
             new ShowAllMenuItem(humanController),
             new RemoveHumanMenuItem(humanController),
@@ -14,7 +14,7 @@ public class Menu {
             new FindByNameMenuItem(humanController),
             new ExitingMenuItem()
     };
-    private Scanner sc = new Scanner(System.in);
+    private final Scanner sc = new Scanner(System.in);
 
 
     public void run() {
